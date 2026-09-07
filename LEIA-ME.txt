@@ -1,0 +1,64 @@
+PORTAL DE TREINAMENTO — SHOPPING D
+VERSÃO REVISADA — IDENTIDADE ARGOPLAN + FOTOS CORRIGIDAS
+
+IDENTIDADE VISUAL
+- Shopping D permanece como marca principal.
+- O “D” do Shopping D usa laranja.
+- Interface, botões, menu, cabeçalhos e portfólio usam azul escuro.
+- Removido o azul claro que não corresponde ao visual solicitado.
+- Argoplan aparece como Administradora.
+- O símbolo Argoplan continua referenciado a partir do site oficial.
+
+FOTOS / RELATÓRIOS
+- Corrigida a renovação das URLs assinadas do Supabase Storage.
+- Ao abrir um relatório, as fotos recebem URLs novas.
+- Registros antigos tentam recuperar automaticamente o caminho do arquivo.
+- O PDF espera as imagens carregarem antes de abrir a impressão.
+- Caso um arquivo realmente tenha sido removido do Storage, aparece “Imagem não disponível” em vez do ícone quebrado.
+
+ACESSO
+- Consulta dos treinamentos: pública.
+- Área Administrativa: necessária apenas para cadastrar, editar, excluir e anexar arquivos.
+
+SUPABASE
+Projeto:
+https://pmxdykgeruppfauiaseh.supabase.co
+
+Se você AINDA NÃO executou o SQL desta versão pública/admin, execute:
+SUPABASE_SETUP_PUBLICO_ADMIN.sql
+
+NÃO precisa apagar:
+- projeto Supabase
+- usuários
+- treinamentos
+- repositório GitHub
+
+GITHUB
+Substitua os arquivos do repositório pelos arquivos deste pacote.
+Depois aguarde a publicação do GitHub Pages e pressione Ctrl + F5.
+
+
+AJUSTE DE FUNDO DO RELATÓRIO
+- Foto do Shopping D ficou mais visível na parte inferior/vazia das páginas.
+- Na região onde existe texto, a foto permanece mais suave.
+- O contraste aumenta gradualmente para baixo, evitando atrapalhar a leitura.
+
+
+AJUSTE FINAL DO FUNDO
+- A foto de fundo foi substituída pela imagem do Shopping D enviada nesta conversa.
+- O fundo cinza foi removido.
+- A foto agora fica claramente visível nas áreas vazias.
+- Atrás dos textos há apenas uma transparência branca para manter a leitura.
+
+AJUSTE VISUAL FINAL
+- Foto do Shopping D mais visível em todas as páginas do relatório.
+- Camada branca reduzida para preservar a leitura sem esconder a fotografia.
+- Cards também ficaram mais transparentes.
+
+CORREÇÃO DO FUNDO — VERSÃO CLARA
+A versão anterior ficou escura na impressão e não correspondia à prévia aprovada.
+Nesta versão:
+- a foto do Shopping D foi clareada por CSS;
+- a imagem permanece visível, mas sem escurecer a folha;
+- o mesmo tratamento é forçado no modo de impressão/PDF;
+- os cartões usam branco translúcido para preservar a leitura.

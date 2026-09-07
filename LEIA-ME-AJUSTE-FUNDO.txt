@@ -1,0 +1,16 @@
+AJUSTE FINAL DO FUNDO DO RELATÓRIO
+
+Nesta versão o fundo foi refeito:
+- adicionada a nova fotografia interna do Shopping D enviada pelo usuário;
+- fundo e capa ficaram mais claros, preservando a leitura dos textos;
+- a fotografia aparece inteira, sem ampliar nem cortar as laterais;
+- a foto original do Shopping D foi mantida;
+- foi criada uma segunda imagem clara: shopping_d_fundo_claro.jpg;
+- o relatório usa essa imagem clara diretamente;
+- não existe mais filtro cinza/escuro por CSS;
+- o véu branco ficou em apenas 18%;
+- os cartões ficam translúcidos para a foto continuar aparecendo;
+- a mesma aparência foi forçada no modo impressão/PDF.
+
+Não precisa apagar Supabase nem GitHub.
+Substitua os arquivos no repositório atual.
