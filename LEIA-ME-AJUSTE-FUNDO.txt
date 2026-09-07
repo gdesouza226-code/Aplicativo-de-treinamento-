@@ -1,5 +1,14 @@
 AJUSTE FINAL DO FUNDO DO RELATÓRIO
 
+VERSÃO ATUAL - TEMA ESCURO FIXO E PDF LEGÍVEL
+- o seletor/filtro de temas foi removido;
+- a plataforma permanece no azul-escuro Argoplan;
+- não há letras brancas: a interface usa azul-claro e o PDF usa azul-marinho;
+- somente a letra D permanece laranja;
+- a fotografia principal está sem filtro, sem faixa laranja e sem sobreposição;
+- o relatório usa caixas azul-claro quase sólidas para máxima leitura;
+- a impressão foi ajustada para A4, sem sobreposição entre páginas.
+
 Nesta versão o fundo foi refeito:
 - adicionada a nova fotografia interna do Shopping D enviada pelo usuário;
 - fundo e capa ficaram mais claros, preservando a leitura dos textos;

@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- Shopping D Portal de Treinamentos - V6 Argoplan Revisado -->
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -15,25 +15,25 @@
       --shop-orange:#F58220;
       --line:#D7DEE3;
       --soft:#F4F6F7;
-      --muted:#65747D;
+      --muted:#315363;
       --argo-navy:#092534;
       --argo-gray:#D7DEE3;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#172028}
-    button,input,textarea,select{font:inherit}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--argo-navy)}
+    button,input,textarea,select{font:inherit;color:var(--argo-navy)}
     button{cursor:pointer}
     .app{min-height:100vh;display:grid;grid-template-columns:260px 1fr}
-    aside{background:linear-gradient(180deg,#1e2930 0%,#26343d 100%);color:#fff;position:sticky;top:0;height:100vh}
-    .brand{height:92px;display:flex;align-items:center;padding:0 24px;border-bottom:1px solid rgba(255,255,255,.08)}
+    aside{background:linear-gradient(180deg,#f7f9fa 0%,#e8eef1 100%);color:var(--argo-navy);position:sticky;top:0;height:100vh;border-right:1px solid #cbd7dd}
+    .brand{height:92px;display:flex;align-items:center;padding:0 24px;border-bottom:1px solid #cbd7dd;background:#fff}
     .brand strong{font-size:28px;letter-spacing:-1px}.brand .d{color:var(--shop-orange);font-size:48px;margin-left:4px}
     nav{padding:12px 0}
-    nav button{width:100%;border:0;background:transparent;color:#79cef7;text-align:left;padding:15px 24px;font-weight:700;text-shadow:0 1px 1px rgba(0,0,0,.22)}
-    nav button:hover,nav button.active{background:#10394c;color:#a7e4ff}
-    nav hr{border:0;border-top:1px solid rgba(255,255,255,.08);margin:8px 18px}
-    .side-bottom{position:absolute;bottom:24px;left:24px;right:24px;color:#79cef7;line-height:1.55;font-size:11px}
-    .side-bottom b{display:block;color:#a7e4ff;letter-spacing:2.2px;font-size:12px;margin-bottom:5px}
-    .side-bottom span{display:block;color:#79cef7;letter-spacing:.4px;margin-top:7px}
+    nav button{width:100%;border:0;background:transparent;color:var(--argo-navy);text-align:left;padding:15px 24px;font-weight:800;text-shadow:none}
+    nav button:hover,nav button.active{background:#dceaf0;color:var(--argo-navy);box-shadow:inset 4px 0 0 var(--shop-orange)}
+    nav hr{border:0;border-top:1px solid #cbd7dd;margin:8px 18px}
+    .side-bottom{position:absolute;bottom:24px;left:24px;right:24px;color:var(--argo-navy);line-height:1.55;font-size:11px}
+    .side-bottom b{display:block;color:var(--argo-navy);letter-spacing:2.2px;font-size:12px;margin-bottom:5px}
+    .side-bottom span{display:block;color:var(--argo-navy);letter-spacing:.4px;margin-top:7px}
     .pdf-page:not(.pdf-cover)::before{
       content:"";
       position:absolute;
@@ -56,22 +56,22 @@
     main{min-width:0}
     header{height:76px;background:white;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 26px;position:sticky;top:0;z-index:5}
     header h1{margin:0;font-size:23px} header small{color:var(--muted)}
-    .user{display:flex;align-items:center;gap:11px}.avatar{width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff;font-weight:800}
+    .user{display:flex;align-items:center;gap:11px}.avatar{width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:#dcecf3;color:#092534;border:1px solid #9fb8c4;font-weight:800}
     .wrap{padding:20px 24px 40px;max-width:1500px;margin:auto}
     .hero{height:220px;border-radius:10px;overflow:hidden;position:relative;background:
-      linear-gradient(90deg,rgba(19,29,35,.46),rgba(19,29,35,.08)),
+      linear-gradient(90deg,rgba(255,255,255,.36),rgba(255,255,255,.06)),
       url('shopping_d_nova_foto.jpg') center center/100% 100% no-repeat,
       linear-gradient(135deg,#586870,#aeb9bf 55%,#e4e8ea);
       box-shadow:var(--shadow)}
-    .hero:after{content:"";position:absolute;right:6%;bottom:0;width:180px;height:145px;background:linear-gradient(145deg,#de5c28,#f59055);clip-path:polygon(35% 0,100% 0,100% 100%,0 100%);opacity:.92}
-    .hero-text{position:absolute;left:32px;bottom:30px;color:#fff;z-index:2}.hero-text b{font-size:38px}.hero-text span{display:block;font-size:15px;letter-spacing:1.4px;margin-top:5px}
+    .hero:after{display:none!important;content:none!important}
+    .hero-text{position:absolute;left:32px;bottom:24px;color:var(--argo-navy);z-index:2;background:rgba(255,255,255,.88);padding:14px 18px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.10)}.hero-text b{font-size:38px}.hero-text span{display:block;font-size:15px;letter-spacing:1.4px;margin-top:5px}.hero-text .hero-d{display:inline;color:var(--shop-orange);font-size:inherit;letter-spacing:inherit;margin:0}
     .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:16px 0}
     .card{background:white;border:1px solid var(--line);border-radius:9px;padding:18px;box-shadow:0 3px 12px rgba(0,0,0,.03)}
     .kpi{display:flex;align-items:center;gap:13px}.kpi .ico{font-size:28px}.kpi b{font-size:26px}.kpi small{display:block;color:var(--muted)}
     .section{background:white;border:1px solid var(--line);border-radius:10px;padding:18px;margin-top:16px}
     .section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
     .section h2{font-size:20px;margin:0}
-    .btn{border:0;border-radius:7px;padding:10px 14px;font-weight:700}.primary{background:var(--accent);color:#fff}.dark{background:var(--ink);color:#fff}.light{background:#f4f6f8;border:1px solid var(--line);color:#27323a}.danger{background:#fff1f0;color:#b23b36;border:1px solid #f2c2bf}
+    .btn{border:0;border-radius:7px;padding:10px 14px;font-weight:700}.primary{background:var(--accent);color:#fff}.dark{background:var(--ink);color:#fff}.light{background:#f4f6f8;border:1px solid var(--line);color:var(--argo-navy)}.danger{background:#fff1f0;color:#b23b36;border:1px solid #f2c2bf}
     .filters{display:grid;grid-template-columns:minmax(280px,1fr) 165px 170px 210px;gap:10px;margin-bottom:14px}.input{width:100%;padding:11px 12px;border:1px solid #cfd6db;border-radius:7px;background:#fff}
     .training{display:grid;grid-template-columns:90px 1fr auto;gap:15px;align-items:center;padding:14px;border:1px solid var(--line);border-radius:9px;margin:10px 0}
     .thumb{height:70px;border-radius:7px;background:linear-gradient(135deg,#35464f,#fb8a4c);display:grid;place-items:center;color:#fff;font-size:34px}
@@ -93,12 +93,12 @@
     .pdf-top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:5px solid var(--accent);padding-bottom:18px}.pdf-logo{font-weight:900;font-size:28px}.pdf-logo span{color:var(--shop-orange);font-size:42px}.tagline{text-align:right;color:#fff;background:var(--ink);padding:12px 18px;font-size:11px;letter-spacing:1px}
     .pdf-cover{padding:0}.cover-visual{height:720px;background:
       linear-gradient(135deg,#73838b,#d8dee1 60%,#ef8b4f);position:relative}
-    .cover-word{position:absolute;left:52px;bottom:88px;color:#fff}.cover-word h1{font-size:42px;margin:0 0 12px}.cover-word p{font-size:18px;margin:0;max-width:620px}
+    .cover-word{position:absolute;left:52px;bottom:88px;color:var(--argo-navy);background:rgba(255,255,255,.88);padding:16px 20px;border-radius:8px}.cover-word h1{font-size:42px;margin:0 0 12px}.cover-word p{font-size:18px;margin:0;max-width:620px}.cover-word .pdf-logo{color:var(--argo-navy)!important}
     .cover-band{height:210px;background:#fff;padding:40px 52px;position:relative}.cover-band:after{content:"";position:absolute;right:0;top:0;width:190px;height:100%;background:var(--accent);clip-path:polygon(45% 0,100% 0,100% 100%,0 100%)}
     .pdf-title{font-size:24px;margin:28px 0 15px;border-left:5px solid var(--accent);padding-left:12px}.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.info-box{border:1px solid var(--line);padding:12px;border-radius:6px}.info-box small{display:block;color:var(--muted);font-weight:700;margin-bottom:4px}
     .pdf-text{line-height:1.7;color:#303c44;font-size:14px;white-space:pre-wrap}.pdf-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pdf-photo{border:1px solid var(--line);padding:7px}.pdf-photo img{width:100%;height:230px;object-fit:cover}.pdf-photo p{font-size:11px;line-height:1.4;margin:7px 3px 3px}
     .eval{display:grid;gap:12px}.evalbox{border-left:5px solid var(--accent);background:#f7f8f9;padding:14px}.footer{display:flex;justify-content:space-between;align-items:center;gap:18px;color:#78838a}
-    .toast{position:fixed;right:18px;bottom:18px;background:#202a31;color:#fff;padding:12px 15px;border-radius:8px;box-shadow:var(--shadow);z-index:50}
+    .toast{position:fixed;right:18px;bottom:18px;background:#dcecf3;color:#092534;border:1px solid #9fb8c4;padding:12px 15px;border-radius:8px;box-shadow:var(--shadow);z-index:50;font-weight:800}
     @media(max-width:1000px){.app{grid-template-columns:1fr}aside{display:none}.cards{grid-template-columns:1fr 1fr}.grid2,.grid3,.filters{grid-template-columns:1fr}.training{grid-template-columns:70px 1fr}.training .actions{grid-column:1/-1;justify-content:flex-start}.photo-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:650px){header{height:auto;padding:14px}.wrap{padding:12px}.cards{grid-template-columns:1fr}.hero{height:170px}.hero-text b{font-size:29px}.photo-grid{grid-template-columns:1fr}.pdf-page{transform-origin:top left}}
     @media print{
@@ -110,7 +110,7 @@
     /* Correções de proporção V4 */
     .app{grid-template-columns:260px minmax(0,1fr)}
     main{width:100%;min-width:0;overflow-x:hidden}
-    header{width:100%;height:76px;min-height:76px}
+    header{width:100%;height:auto;min-height:76px;flex-wrap:wrap;gap:12px;padding-top:10px;padding-bottom:10px}
     .wrap{width:100%;max-width:1500px;margin:0 auto;padding:20px 24px 40px}
     aside{width:260px;overflow:hidden}
     .side-bottom{left:24px;right:18px;bottom:24px}
@@ -131,12 +131,12 @@
     .argo-sub{display:block;color:#76818a;font-size:8px;letter-spacing:.8px;font-weight:700;margin-top:1px}
     .hero-admin{
       position:absolute;right:22px;top:18px;z-index:2;
-      background:rgba(22,38,48,.90);color:#fff;border-radius:7px;
+      background:rgba(255,255,255,.94);color:var(--argo-navy);border-radius:7px;
       padding:10px 13px;display:flex;align-items:center;gap:10px;
       box-shadow:0 5px 18px rgba(0,0,0,.14)
     }
-    .hero-admin .argo-word{font-size:13px;color:#fff}
-    .hero-admin .argo-sub{color:#d8e0e4}
+    .hero-admin .argo-word{font-size:13px;color:var(--argo-navy)}
+    .hero-admin .argo-sub{color:var(--argo-navy)}
     .pdf-admin{
       display:flex;align-items:center;gap:7px;font-size:9px;color:#5e6970;
       margin-top:7px
@@ -272,6 +272,131 @@
       backdrop-filter:none;
     }
 
+    /* Seletor de temas Argoplan */
+    .theme-picker{display:flex;align-items:center;gap:7px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--argo-navy);font-size:12px;font-weight:800}
+    .theme-picker select{border:0;background:transparent;color:var(--argo-navy);font-weight:800;outline:none;cursor:pointer;min-width:112px}
+    .portal-label{font-size:13px;font-weight:900;color:var(--argo-navy);letter-spacing:.3px}
+
+    html[data-theme="dark"]{
+      --theme-page:#07161e;--theme-surface:#102631;--theme-surface2:#173441;
+      --theme-sidebar:#091f2a;--theme-text:#f0f6f8;--theme-muted:#b9ccd5;--theme-border:#31515f;
+    }
+    html[data-theme="blue"]{
+      --theme-page:#062331;--theme-surface:#0b3344;--theme-surface2:#10465c;
+      --theme-sidebar:#041b27;--theme-text:#f3f8fa;--theme-muted:#c5dce6;--theme-border:#2e6075;
+    }
+    html[data-theme="dark"] body,html[data-theme="blue"] body{background:var(--theme-page);color:var(--theme-text)}
+    html[data-theme="dark"] aside,html[data-theme="blue"] aside{background:var(--theme-sidebar);border-right-color:var(--theme-border);color:var(--theme-text)}
+    html[data-theme="dark"] .brand,html[data-theme="blue"] .brand{background:var(--theme-sidebar);border-bottom-color:var(--theme-border)}
+    html[data-theme="dark"] .brand strong,html[data-theme="blue"] .brand strong{color:var(--theme-text)}
+    html[data-theme="dark"] nav button,html[data-theme="blue"] nav button{color:var(--theme-text)}
+    html[data-theme="dark"] nav button:hover,html[data-theme="dark"] nav button.active,
+    html[data-theme="blue"] nav button:hover,html[data-theme="blue"] nav button.active{background:var(--theme-surface2);color:var(--theme-text)}
+    html[data-theme="dark"] nav hr,html[data-theme="blue"] nav hr{border-top-color:var(--theme-border)}
+    html[data-theme="dark"] .side-bottom,html[data-theme="dark"] .side-bottom span,
+    html[data-theme="blue"] .side-bottom,html[data-theme="blue"] .side-bottom span{color:var(--theme-muted)!important}
+    html[data-theme="dark"] header,html[data-theme="blue"] header{background:var(--theme-surface);border-bottom-color:var(--theme-border)}
+    html[data-theme="dark"] header h1,html[data-theme="dark"] header small,html[data-theme="dark"] .portal-label,
+    html[data-theme="blue"] header h1,html[data-theme="blue"] header small,html[data-theme="blue"] .portal-label{color:var(--theme-text)}
+    html[data-theme="dark"] .card,html[data-theme="dark"] .section,html[data-theme="dark"] .panel,html[data-theme="dark"] .training,html[data-theme="dark"] .material-card,
+    html[data-theme="blue"] .card,html[data-theme="blue"] .section,html[data-theme="blue"] .panel,html[data-theme="blue"] .training,html[data-theme="blue"] .material-card{background:var(--theme-surface);border-color:var(--theme-border);color:var(--theme-text)}
+    html[data-theme="dark"] .input,html[data-theme="dark"] input,html[data-theme="dark"] textarea,html[data-theme="dark"] select,
+    html[data-theme="blue"] .input,html[data-theme="blue"] input,html[data-theme="blue"] textarea,html[data-theme="blue"] select{background:var(--theme-surface2);border-color:var(--theme-border);color:var(--theme-text)}
+    html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder,
+    html[data-theme="blue"] input::placeholder,html[data-theme="blue"] textarea::placeholder{color:var(--theme-muted)}
+    html[data-theme="dark"] .meta,html[data-theme="dark"] label,html[data-theme="dark"] .card small,
+    html[data-theme="blue"] .meta,html[data-theme="blue"] label,html[data-theme="blue"] .card small{color:var(--theme-muted)}
+    html[data-theme="dark"] .public-note,html[data-theme="blue"] .public-note{background:var(--theme-surface2);border-color:var(--theme-border);color:var(--theme-text)}
+    html[data-theme="dark"] .light,html[data-theme="blue"] .light{background:var(--theme-surface2);border-color:var(--theme-border);color:var(--theme-text)}
+    html[data-theme="dark"] .theme-picker,html[data-theme="blue"] .theme-picker{background:var(--theme-surface2);border-color:var(--theme-border);color:var(--theme-text)}
+    html[data-theme="dark"] .theme-picker select,html[data-theme="blue"] .theme-picker select{color:var(--theme-text)}
+    html[data-theme="dark"] .theme-picker option,html[data-theme="blue"] .theme-picker option{background:var(--theme-surface);color:var(--theme-text)}
+    html[data-theme="dark"] .admin-strip,html[data-theme="blue"] .admin-strip{background:var(--theme-surface2);border-color:var(--theme-border)}
+    html[data-theme="dark"] .admin-strip .argo-word,html[data-theme="dark"] .admin-strip .argo-sub,
+    html[data-theme="blue"] .admin-strip .argo-word,html[data-theme="blue"] .admin-strip .argo-sub{color:var(--theme-text)}
+    html[data-theme="dark"] table th,html[data-theme="blue"] table th{background:var(--theme-surface2);color:var(--theme-text)}
+    html[data-theme="dark"] table td,html[data-theme="blue"] table td{color:var(--theme-text);border-bottom-color:var(--theme-border)}
+
+</style>
+
+<style>
+/* Revisão geral de legibilidade - padrão azul-escuro Argoplan */
+body{font-size:16px!important;color:#092534!important}
+header{background:#f8fafb!important;color:#092534!important;border-bottom-color:#b8cbd4!important}
+header h1,.portal-label,header small{color:#092534!important}
+header small{font-size:14px!important;line-height:1.45!important}
+aside,html[data-theme="dark"] aside,html[data-theme="blue"] aside{
+  background:linear-gradient(180deg,#f7f9fa 0%,#e5edf1 100%)!important;
+  color:#092534!important;border-right-color:#b8cbd4!important
+}
+.brand,html[data-theme="dark"] .brand,html[data-theme="blue"] .brand{background:#fff!important;border-bottom-color:#b8cbd4!important}
+.brand strong{color:#092534!important}
+nav button,html[data-theme="dark"] nav button,html[data-theme="blue"] nav button{
+  color:#092534!important;font-size:16px!important;line-height:1.35!important;font-weight:800!important
+}
+nav button:hover,nav button.active,
+html[data-theme="dark"] nav button:hover,html[data-theme="dark"] nav button.active,
+html[data-theme="blue"] nav button:hover,html[data-theme="blue"] nav button.active{
+  background:#d7e8f0!important;color:#092534!important
+}
+.side-bottom,.side-bottom span,
+html[data-theme="dark"] .side-bottom,html[data-theme="dark"] .side-bottom span,
+html[data-theme="blue"] .side-bottom,html[data-theme="blue"] .side-bottom span{
+  color:#092534!important;font-size:12px!important
+}
+.card,.section,.panel,.training,.material-card,.photo-card,
+html[data-theme="dark"] .card,html[data-theme="dark"] .section,html[data-theme="dark"] .panel,html[data-theme="dark"] .training,html[data-theme="dark"] .material-card,
+html[data-theme="blue"] .card,html[data-theme="blue"] .section,html[data-theme="blue"] .panel,html[data-theme="blue"] .training,html[data-theme="blue"] .material-card{
+  background:#fff!important;color:#092534!important;border-color:#b8cbd4!important
+}
+.section h2,.panel h2,.training h3,.card b,.material-card b{color:#092534!important}
+.section h2,.panel h2{font-size:22px!important}
+.training h3{font-size:18px!important}
+.card small,.meta,.material-card small{color:#315363!important;font-size:14px!important;line-height:1.4!important}
+label{color:#092534!important;font-size:14px!important}
+.input,input,textarea,select,
+html[data-theme="dark"] .input,html[data-theme="dark"] input,html[data-theme="dark"] textarea,html[data-theme="dark"] select,
+html[data-theme="blue"] .input,html[data-theme="blue"] input,html[data-theme="blue"] textarea,html[data-theme="blue"] select{
+  background:#fff!important;color:#092534!important;border-color:#9fb8c4!important;font-size:15px!important
+}
+input::placeholder,textarea::placeholder{color:#526e7c!important;opacity:1!important}
+.public-note,html[data-theme="dark"] .public-note,html[data-theme="blue"] .public-note{
+  background:#edf5f8!important;color:#092534!important;border-color:#b8cbd4!important;font-size:14px!important
+}
+.btn.light,.btn.primary,.btn.dark,
+html[data-theme="dark"] .light,html[data-theme="blue"] .light{
+  background:#dcecf3!important;color:#092534!important;border:1px solid #9fb8c4!important;font-size:14px!important
+}
+.btn.primary,.btn.dark{border-color:#092534!important;font-weight:800!important}
+.step,.step.active{background:#dcecf3!important;color:#092534!important;font-size:13px!important}
+.theme-picker,.admin-strip,
+html[data-theme="dark"] .theme-picker,html[data-theme="blue"] .theme-picker,
+html[data-theme="dark"] .admin-strip,html[data-theme="blue"] .admin-strip{
+  background:#fff!important;color:#092534!important;border-color:#b8cbd4!important
+}
+.theme-picker select,.argo-word,.argo-sub,
+html[data-theme="dark"] .theme-picker select,html[data-theme="blue"] .theme-picker select,
+html[data-theme="dark"] .admin-strip .argo-word,html[data-theme="dark"] .admin-strip .argo-sub,
+html[data-theme="blue"] .admin-strip .argo-word,html[data-theme="blue"] .admin-strip .argo-sub{color:#092534!important}
+table th,table td,
+html[data-theme="dark"] table th,html[data-theme="dark"] table td,
+html[data-theme="blue"] table th,html[data-theme="blue"] table td{
+  color:#092534!important;font-size:14px!important;border-bottom-color:#c6d5dc!important
+}
+table th{background:#eaf3f7!important}
+
+/* PDF sempre claro e com texto escuro, sem herdar o tema da tela */
+.pdf-page,.pdf-page *{text-shadow:none!important}
+.pdf-page{color:#092534!important;background:#fff!important}
+.pdf-page .pdf-text{color:#092534!important;font-size:15px!important;line-height:1.6!important}
+.pdf-page .pdf-title{color:#092534!important;font-size:23px!important}
+.pdf-page .info-box,.pdf-page .info-box small{color:#092534!important;font-size:13px!important}
+.pdf-page .evalbox,.pdf-page .evalbox h3{color:#092534!important}
+.pdf-page .evalbox h3{font-size:17px!important;margin:0 0 6px!important}
+.pdf-page .pdf-section-mark,.pdf-page .tagline{background:#dcecf3!important;color:#092534!important;border:1px solid #9fb8c4!important}
+.pdf-page .pdf-section-mark strong,.pdf-page .pdf-section-mark span,.pdf-page .tagline{color:#092534!important}
+.pdf-page .footer,.pdf-page .footer span{color:#315363!important;font-size:9.5px!important}
+.cover-word{color:#092534!important}
 </style>
 </head>
 <body>
@@ -313,8 +438,8 @@
       <button data-view="dashboard">📊 &nbsp; Relatórios</button>
     </nav>
     <div class="side-bottom">
-      <span style="display:block;color:#a7e4ff;letter-spacing:.1px;font-weight:800;line-height:1.35">Plataforma criada por<br>Gabriel Soares</span>
-      <span style="display:block;color:#79cef7;letter-spacing:0;margin-top:6px;line-height:1.3">gdesouza226@gmail.com</span>
+      <span style="display:block;color:#092534;letter-spacing:.1px;font-weight:800;line-height:1.35">Plataforma criada por<br>Gabriel Soares</span>
+      <span style="display:block;color:#092534;letter-spacing:0;margin-top:6px;line-height:1.3">gdesouza226@gmail.com</span>
     </div>
 </aside>
   <main>
@@ -324,7 +449,7 @@
         <small>Shopping D • Capacitação e desenvolvimento das equipes</small>
       </div>
       <div style="display:flex;align-items:center;margin-left:auto;gap:10px;flex-wrap:wrap;justify-content:flex-end">
-        <div style="font-size:13px;font-weight:900;color:#092534;letter-spacing:.3px">PORTAL DE TREINAMENTO</div>
+        <div class="portal-label">PORTAL DE TREINAMENTO</div>
         <div class="cloud-status" id="cloudStatus">☁ Carregando treinamentos...</div>
         <button class="btn light" id="adminLoginBtn" onclick="openAdminLogin()">🔒 Área Administrativa</button>
         <button class="btn light logout-btn" id="logoutBtn" style="display:none" onclick="logoutAdmin()">Sair</button>
@@ -338,7 +463,7 @@
     <div class="wrap">
       <section id="dashboardView">
         <div class="hero">
-          <div class="hero-text"><b>SHOPPING D</b><span>PORTAL DE GESTÃO DE TREINAMENTOS</span></div>
+          <div class="hero-text"><b>SHOPPING <span class="hero-d">D</span></b><span>PORTAL DE GESTÃO DE TREINAMENTOS</span></div>
           <div class="hero-admin">
             <img class="argo-logo-icon" src="https://www.argoplan.com/_nuxt/logo_icon.Db2Mg8Gi.webp" alt="Argoplan" onerror="this.style.display='none';if(this.nextElementSibling&&this.nextElementSibling.classList.contains('argo-mark-fallback'))this.nextElementSibling.style.display='block'"><span class="argo-mark-fallback" aria-hidden="true"></span>
             <div><span class="argo-word">ARGOPLAN</span><span class="argo-sub">ADMINISTRADORA</span></div>
@@ -775,7 +900,7 @@ function renderList(){
       <div><h3>${esc(t.title)}</h3><div class="meta"><span>📅 ${fmtDate(t.date)}</span><span>🏷 ${esc(t.category||'')}</span><span>👤 ${esc(t.instructor||'')}</span><span>👥 ${(t.participants||[]).length} participantes</span></div></div>
       <div class="actions"><span class="status ${t.status==='Concluído'?'ok':'progress'}">${esc(t.status)}</span>
       <button class="btn light" onclick="previewTraining('${t.id}')">👁 Visualizar</button><button class="btn primary" onclick="previewTraining('${t.id}')">📄 Relatório / PDF</button>${isAdmin?`<button class="btn light" onclick="editTraining('${t.id}')">✎ Editar</button><button class="btn danger" onclick="removeTraining('${t.id}')">Excluir</button>`:''}</div>
-    </div>`).join(''):'<div style="padding:35px;text-align:center;color:#7c8790">Nenhum treinamento encontrado.</div>';
+    </div>`).join(''):'<div class="empty-state">Nenhum treinamento encontrado.</div>';
   document.getElementById('kTrain').textContent=db.trainings.length;
   document.getElementById('kPeople').textContent=db.trainings.reduce((n,t)=>n+(t.participants||[]).length,0);
   document.getElementById('kInst').textContent=new Set(db.trainings.map(t=>t.instructor).filter(Boolean)).size;
@@ -888,7 +1013,7 @@ function renderMaterials(){
     <div class="material-icon">${fileIcon(f.name)}</div>
     <div><b>${esc(f.name)}</b><small>${fileSize(f.size||0)} • Material do treinamento</small></div>
     <div><button class="btn light" onclick="openMaterial(${i})">Abrir</button> <button class="btn danger" onclick="workingMaterials.splice(${i},1);renderMaterials()">Remover</button></div>
-  </div>`).join(''):'<div style="padding:18px;text-align:center;border:1px dashed #cfd6db;border-radius:8px;color:#7b858c">Nenhum material anexado.</div>'
+  </div>`).join(''):'<div class="empty-state">Nenhum material anexado.</div>'
 }
 function openMaterial(i){
   const f=workingMaterials[i];if(!f)return;
@@ -974,8 +1099,8 @@ function buildPDF(t){
   const photos=t.photos||[], photoPages=Math.max(1,Math.ceil(photos.length/4)), total=4+photoPages;
   let pages=[];
   pages.push(`<article class="pdf-page pdf-cover">
-    <div class="cover-visual"><img class="cover-photo-local" src="shopping_d_nova_foto.jpg" alt=""><div class="cover-word"><div class="pdf-logo" style="color:white">SHOPPING <span>D</span></div>
-      <div style="margin-top:8px;font-size:11px;letter-spacing:1px;color:#e3e8eb">ADMINISTRADORA ARGOPLAN</div><h1>RELATÓRIO DE TREINAMENTO</h1><p>${esc(t.title)}</p></div></div>
+    <div class="cover-visual"><img class="cover-photo-local" src="shopping_d_nova_foto.jpg" alt=""><div class="cover-word"><div class="pdf-logo">SHOPPING <span>D</span></div>
+      <div style="margin-top:8px;font-size:11px;letter-spacing:1px;color:#092534;font-weight:800">ADMINISTRADORA ARGOPLAN</div><h1>RELATÓRIO DE TREINAMENTO</h1><p>${esc(t.title)}</p></div></div>
     <div class="cover-band"><h2>SETOR DE TREINAMENTO • ${esc(t.category||'CAPACITAÇÃO')}</h2><p>${fmtDate(t.date)} • ${esc(t.location||'Shopping D')}</p></div>
   </article>`);
   pages.push(`<article class="pdf-page"><div class="pdf-watermark"></div><div class="pdf-top"><div>
@@ -995,7 +1120,7 @@ function buildPDF(t){
     </div><div class="pdf-section-mark"><strong>SETOR DE TREINAMENTO</strong><span>REGISTRO DE PRESENÇA</span></div></div>
     <h2 class="pdf-title">Participantes</h2><table><thead><tr><th>Nome</th><th>Função</th><th>Empresa</th><th>Assinatura</th></tr></thead><tbody>
     ${(t.participants||[]).map(p=>`<tr><td>${esc(p.name)}</td><td>${esc(p.role)}</td><td>${esc(p.company)}</td><td style="height:48px"></td></tr>`).join('')||'<tr><td colspan="4">Nenhum participante cadastrado.</td></tr>'}
-    </tbody></table><div style="margin-top:40px;padding:18px;background:#f7f8f9;border-left:5px solid var(--accent)"><b>Responsável pelo treinamento</b><br><br>${esc(t.instructor||'—')}<br><small>${esc(t.location||'Shopping D')}</small></div>${footer(3,total)}</article>`);
+    </tbody></table><div class="pdf-responsible"><b>Responsável pelo treinamento</b><br><br>${esc(t.instructor||'—')}<br><small>${esc(t.location||'Shopping D')}</small></div>${footer(3,total)}</article>`);
   if(photos.length){
     for(let p=0;p<photoPages;p++){const chunk=photos.slice(p*4,p*4+4);pages.push(`<article class="pdf-page"><div class="pdf-watermark"></div><div class="pdf-top"><div>
       <div class="pdf-logo">SHOPPING <span>D</span></div>
@@ -1010,7 +1135,7 @@ function buildPDF(t){
     pages.push(`<article class="pdf-page"><div class="pdf-watermark"></div><div class="pdf-top"><div>
       <div class="pdf-logo">SHOPPING <span>D</span></div>
       <div class="pdf-admin"><img class="argo-logo-icon" src="https://www.argoplan.com/_nuxt/logo_icon.Db2Mg8Gi.webp" alt="Argoplan" onerror="this.style.display='none';if(this.nextElementSibling&&this.nextElementSibling.classList.contains('argo-mark-fallback'))this.nextElementSibling.style.display='block'"><span class="argo-mark-fallback" aria-hidden="true"></span><span><b>Administradora Argoplan</b></span></div>
-    </div><div class="pdf-section-mark"><strong>SETOR DE TREINAMENTO</strong><span>RELATÓRIO FOTOGRÁFICO</span></div></div><h2 class="pdf-title">Registro fotográfico</h2><div style="height:700px;display:grid;place-items:center;border:2px dashed #cfd6db;color:#7a858d">Nenhuma fotografia adicionada a este treinamento.</div>${footer(4,total)}</article>`)
+    </div><div class="pdf-section-mark"><strong>SETOR DE TREINAMENTO</strong><span>RELATÓRIO FOTOGRÁFICO</span></div></div><h2 class="pdf-title">Registro fotográfico</h2><div class="pdf-empty-photo">Nenhuma fotografia adicionada a este treinamento.</div>${footer(4,total)}</article>`)
   }
   pages.push(`<article class="pdf-page"><div class="pdf-watermark"></div><div class="pdf-top"><div>
       <div class="pdf-logo">SHOPPING <span>D</span></div>
@@ -1021,7 +1146,7 @@ function buildPDF(t){
       <div class="evalbox"><b>⚠ Pontos de atenção</b><div class="pdf-text">${esc(t.negative||'Não informado.')}</div></div>
       <div class="evalbox"><b>↗ Oportunidades de melhoria</b><div class="pdf-text">${esc(t.improvement||'Não informado.')}</div></div>
     </div><h2 class="pdf-title">Conclusão</h2><div class="pdf-text">${esc(t.conclusion||'Treinamento concluído e registrado no Portal de Gestão de Treinamentos do Shopping D.')}</div>
-    <div style="margin-top:42px;margin-bottom:42px;text-align:center"><div style="width:290px;border-top:1px solid #444;margin:auto;padding-top:8px"><b>${esc(t.instructor||'Responsável')}</b><br><small>Responsável pelo treinamento</small></div></div>${footer(total,total)}</article>`);
+    <div class="pdf-signature"><div><b>${esc(t.instructor||'Responsável')}</b><br><small>Responsável pelo treinamento</small></div></div>${footer(total,total)}</article>`);
   document.getElementById('pdfContent').innerHTML=pages.join('')
 }
 
@@ -1100,7 +1225,7 @@ function renderModelFiles(){
           <button class="btn danger" onclick="workingModelFiles.splice(${i},1);renderModelFiles()">Remover</button>
         </div>
       </div>`).join('')
-    : '<div style="padding:20px;text-align:center;border:1px dashed #cfd6db;border-radius:8px;color:#7b858c">Nenhum PDF adicionado.</div>';
+    : '<div class="empty-state">Nenhum PDF adicionado.</div>';
 }
 
 function downloadDataFile(f){
@@ -1145,14 +1270,14 @@ function renderSavedModels(){
             <span>🏷 ${esc(m.category||'')}</span>
             <span>📎 ${(m.files||[]).length} PDF(s)</span>
           </div>
-          ${m.description?`<div style="margin-top:7px;color:#65717a;font-size:13px">${esc(m.description)}</div>`:''}
+          ${m.description?`<div class="model-description">${esc(m.description)}</div>`:''}
         </div>
         <div class="actions">
           ${(m.files||[]).map((f,i)=>`<button class="btn light" onclick="openSavedModelFile('${m.id}',${i})">Abrir PDF</button>`).join('')}
           <button class="btn danger" onclick="deleteModel('${m.id}')">Excluir</button>
         </div>
       </div>`).join('')
-    : '<div style="padding:28px;text-align:center;color:#7b858c">Nenhum modelo salvo ainda.</div>';
+    : '<div class="empty-state">Nenhum modelo salvo ainda.</div>';
 }
 
 function openSavedModelFile(id,i){
@@ -1254,9 +1379,6 @@ load()
 })();
 </script>
 
-</body>
-</html>
-
 <style>
 .pdf-page:not(.pdf-cover){background:#fff!important}
 .pdf-page:not(.pdf-cover) .info-box{
@@ -1270,6 +1392,95 @@ load()
   background:rgba(255,255,255,.64)!important;
 }
 
+</style>
+
+<style>
+/* Revisão do relatório: cores fixas e paginação A4 independente do tema da tela */
+.pdf-page{
+  color:#092534!important;
+  background-color:#fff!important;
+}
+.pdf-page .pdf-title,
+.pdf-page .info-box,
+.pdf-page .info-box small,
+.pdf-page .pdf-text,
+.pdf-page .evalbox,
+.pdf-page .evalbox h1,
+.pdf-page .evalbox h2,
+.pdf-page .evalbox h3,
+.pdf-page .pdf-photo,
+.pdf-page .pdf-photo p,
+.pdf-page .pdf-admin,
+.pdf-page .pdf-admin b,
+.pdf-page .footer,
+.pdf-page table,
+.pdf-page table th,
+.pdf-page table td{
+  color:#092534!important;
+}
+.pdf-page .pdf-section-mark,
+.pdf-page .pdf-section-mark strong,
+.pdf-page .pdf-section-mark span,
+.pdf-page .tagline{
+  color:#092534!important;
+}
+.pdf-page .pdf-section-mark,.pdf-page .tagline{
+  background:#dcecf3!important;
+  border:1px solid #9fb8c4!important;
+}
+.pdf-page .footer{
+  background:rgba(255,255,255,.97)!important;
+}
+
+@media print{
+  @page{size:A4 portrait;margin:0!important}
+  html,body{
+    width:210mm!important;
+    height:auto!important;
+    margin:0!important;
+    padding:0!important;
+    background:#fff!important;
+  }
+  #pdfContent,.preview-shell{
+    display:block!important;
+    width:210mm!important;
+    margin:0!important;
+    padding:0!important;
+    background:#fff!important;
+    overflow:visible!important;
+  }
+  .pdf-page{
+    display:flex!important;
+    flex-direction:column!important;
+    box-sizing:border-box!important;
+    width:210mm!important;
+    height:297mm!important;
+    min-height:297mm!important;
+    max-height:297mm!important;
+    margin:0!important;
+    padding:11mm 13.75mm 7.4mm!important;
+    overflow:hidden!important;
+    page-break-before:auto!important;
+    page-break-after:always!important;
+    page-break-inside:avoid!important;
+    break-before:auto!important;
+    break-after:page!important;
+    break-inside:avoid-page!important;
+    box-shadow:none!important;
+  }
+  .pdf-page.pdf-cover{
+    display:block!important;
+    padding:0!important;
+  }
+  .pdf-page:last-child{
+    page-break-after:auto!important;
+    break-after:auto!important;
+  }
+  .pdf-page>.footer{
+    margin-top:auto!important;
+    flex-shrink:0!important;
+  }
+}
 </style>
 
 <style>
@@ -1297,9 +1508,251 @@ load()
     print-color-adjust:exact!important;
   }
   .pdf-page:not(.pdf-cover){
-    background:#fff!important;
+    background:#e3f0f5!important;
     -webkit-print-color-adjust:exact!important;
     print-color-adjust:exact!important;
   }
 }
 </style>
+
+<style>
+/* Tema final: somente tons de azul Argoplan, sem branco visível */
+:root{
+  --blue-950:#041923;
+  --blue-900:#092534;
+  --blue-800:#0e3a4d;
+  --blue-700:#16546c;
+  --blue-500:#4f91aa;
+  --blue-300:#9fc9d9;
+  --blue-200:#c3dde7;
+  --blue-100:#dcecf3;
+  --blue-050:#e7f2f7;
+}
+
+html[data-theme="light"]{--ui-page:#c3dde7;--ui-surface:#e7f2f7;--ui-surface2:#dcecf3;--ui-text:#092534;--ui-muted:#315e70;--ui-border:#79aabd;--ui-sidebar:#9fc9d9}
+html[data-theme="dark"]{--ui-page:#041923;--ui-surface:#0e3a4d;--ui-surface2:#16546c;--ui-text:#9fc9d9;--ui-muted:#7eb4c8;--ui-border:#4f91aa;--ui-sidebar:#092534}
+html[data-theme="blue"]{--ui-page:#092534;--ui-surface:#0e3a4d;--ui-surface2:#16546c;--ui-text:#c3dde7;--ui-muted:#9fc9d9;--ui-border:#4f91aa;--ui-sidebar:#041923}
+
+body,html[data-theme] body{background:var(--ui-page)!important;color:var(--ui-text)!important}
+header,html[data-theme] header{background:var(--ui-surface)!important;color:var(--ui-text)!important;border-color:var(--ui-border)!important}
+header h1,header small,.portal-label,html[data-theme] header h1,html[data-theme] header small,html[data-theme] .portal-label{color:var(--ui-text)!important}
+aside,html[data-theme] aside{background:var(--ui-sidebar)!important;color:var(--ui-text)!important;border-color:var(--ui-border)!important}
+.brand,html[data-theme] .brand{background:var(--ui-surface)!important;border-color:var(--ui-border)!important}
+.brand strong,html[data-theme] .brand strong{color:var(--ui-text)!important}
+.brand .d,.hero-d,.pdf-logo span,.auth-brand span{color:#f58220!important}
+nav button,html[data-theme] nav button{color:var(--ui-text)!important}
+nav button:hover,nav button.active,html[data-theme] nav button:hover,html[data-theme] nav button.active{
+  background:var(--ui-surface2)!important;color:var(--ui-text)!important;box-shadow:inset 4px 0 0 var(--blue-500)!important
+}
+nav hr,html[data-theme] nav hr{border-color:var(--ui-border)!important}
+.side-bottom,.side-bottom span,html[data-theme] .side-bottom,html[data-theme] .side-bottom span{color:var(--ui-text)!important}
+
+.card,.section,.panel,.training,.material-card,.photo-card,
+html[data-theme] .card,html[data-theme] .section,html[data-theme] .panel,html[data-theme] .training,html[data-theme] .material-card{
+  background:var(--ui-surface)!important;color:var(--ui-text)!important;border-color:var(--ui-border)!important
+}
+.section h2,.panel h2,.training h3,.card b,.card small,.meta,.material-card b,.material-card small,label,
+html[data-theme] .section h2,html[data-theme] .panel h2,html[data-theme] .training h3,html[data-theme] .card b,html[data-theme] .card small,html[data-theme] .meta,html[data-theme] label{
+  color:var(--ui-text)!important
+}
+.input,input,textarea,select,
+html[data-theme] .input,html[data-theme] input,html[data-theme] textarea,html[data-theme] select{
+  background:var(--ui-surface2)!important;color:var(--ui-text)!important;border-color:var(--ui-border)!important
+}
+input::placeholder,textarea::placeholder,html[data-theme] input::placeholder,html[data-theme] textarea::placeholder{color:var(--ui-muted)!important;opacity:1!important}
+.public-note,html[data-theme] .public-note{background:var(--ui-surface2)!important;color:var(--ui-text)!important;border-color:var(--ui-border)!important}
+.theme-picker,.admin-strip,.hero-admin,.cloud-status,.auth-card,
+html[data-theme] .theme-picker,html[data-theme] .admin-strip,html[data-theme] .hero-admin{
+  background:var(--ui-surface2)!important;color:var(--ui-text)!important;border-color:var(--ui-border)!important
+}
+.theme-picker select,.argo-word,.argo-sub,.hero-admin .argo-word,.hero-admin .argo-sub,.admin-strip .argo-word,.admin-strip .argo-sub,
+html[data-theme] .theme-picker select,html[data-theme] .argo-word,html[data-theme] .argo-sub{color:var(--ui-text)!important}
+.theme-picker option,html[data-theme] .theme-picker option{background:var(--ui-surface)!important;color:var(--ui-text)!important}
+.btn,.btn.light,.btn.primary,.btn.dark,.btn.danger,.step,.step.active,.status,.ok,.progress,
+html[data-theme] .btn,html[data-theme] .light{
+  background:var(--ui-surface2)!important;color:var(--ui-text)!important;border:1px solid var(--ui-border)!important
+}
+.toast,.avatar{background:var(--ui-surface2)!important;color:var(--ui-text)!important;border-color:var(--ui-border)!important}
+.thumb,.material-icon{background:linear-gradient(135deg,var(--blue-800),var(--blue-500))!important;color:var(--blue-200)!important}
+table th,table td,html[data-theme] table th,html[data-theme] table td{color:var(--ui-text)!important;border-color:var(--ui-border)!important}
+table th,html[data-theme] table th{background:var(--ui-surface2)!important}
+.photo-frame,.photo-fallback{background:var(--ui-surface2)!important;color:var(--ui-text)!important;border-color:var(--ui-border)!important}
+.preview-shell{background:var(--ui-page)!important}
+.auth-card p,.auth-note,#loginStatus,.auth-error{color:var(--ui-text)!important}
+.auth-error{background:var(--ui-surface2)!important;border:1px solid var(--ui-border)!important}
+
+.hero-text{background:rgba(220,236,243,.90)!important;color:var(--blue-900)!important}
+.hero-text b,.hero-text>span{color:var(--blue-900)!important}
+
+/* Relatório/PDF: papel azul-claro e todas as letras em azul */
+.pdf-page,.pdf-page:not(.pdf-cover){background:var(--blue-050)!important;color:var(--blue-900)!important}
+.pdf-page:not(.pdf-cover)::before{
+  background:linear-gradient(rgba(220,236,243,.52),rgba(220,236,243,.52)),url('shopping_d_nova_foto.jpg') center top/100% 100% no-repeat!important
+}
+.pdf-page .info-box,.pdf-page .evalbox,.pdf-page .pdf-photo,.pdf-page table,.pdf-page .creator-stamp,
+.pdf-page .pdf-box,.pdf-page .pdf-info,.pdf-page .pdf-section,.pdf-page .signature-box,.pdf-page .footer{
+  background:rgba(195,221,231,.86)!important;color:var(--blue-900)!important;border-color:var(--blue-500)!important
+}
+.pdf-page .pdf-title,.pdf-page .pdf-text,.pdf-page .info-box,.pdf-page .info-box small,
+.pdf-page .evalbox,.pdf-page .evalbox h1,.pdf-page .evalbox h2,.pdf-page .evalbox h3,
+.pdf-page .pdf-photo,.pdf-page .pdf-photo p,.pdf-page .pdf-admin,.pdf-page .pdf-admin b,
+.pdf-page .footer,.pdf-page .footer span,.pdf-page table,.pdf-page table th,.pdf-page table td{
+  color:var(--blue-900)!important
+}
+.pdf-page .pdf-section-mark,.pdf-page .tagline,.pdf-page table th{
+  background:var(--blue-200)!important;color:var(--blue-900)!important;border-color:var(--blue-500)!important
+}
+.pdf-page .pdf-section-mark strong,.pdf-page .pdf-section-mark span,.pdf-page .tagline{color:var(--blue-900)!important}
+.cover-band,.cover-word{background:rgba(220,236,243,.94)!important;color:var(--blue-900)!important}
+.cover-band h2,.cover-band p,.cover-word h1,.cover-word p,.cover-word .pdf-logo{color:var(--blue-900)!important}
+.cover-band:after{background:var(--blue-700)!important}
+.auth-gate{background:linear-gradient(135deg,var(--blue-950),var(--blue-900),var(--blue-800))!important}
+
+@media print{
+  html,body,#pdfContent,.preview-shell{background:var(--blue-100)!important}
+  .pdf-page,.pdf-page:not(.pdf-cover){background:var(--blue-050)!important}
+}
+</style>
+
+<style>
+/* Versão definitiva: modo escuro Argoplan fixo e contraste reforçado */
+html,html[data-theme],body,html[data-theme] body{
+  --accent:#4f91aa!important;
+  --ui-page:#041923!important;
+  --ui-surface:#092f40!important;
+  --ui-surface2:#12465b!important;
+  --ui-text:#b9ddea!important;
+  --ui-muted:#91c4d7!important;
+  --ui-border:#4f91aa!important;
+  --ui-sidebar:#062331!important;
+  background:#041923!important;
+  color:#b9ddea!important;
+}
+body *{color:#b9ddea!important}
+header,html[data-theme] header{background:#092f40!important;color:#b9ddea!important;border-color:#4f91aa!important}
+header h1,header small,.portal-label{color:#b9ddea!important}
+aside,html[data-theme] aside{background:#062331!important;color:#b9ddea!important;border-color:#4f91aa!important}
+.brand,html[data-theme] .brand{background:#092f40!important;border-color:#4f91aa!important}
+.brand strong,nav button,.side-bottom,.side-bottom span,
+html[data-theme] .brand strong,html[data-theme] nav button,html[data-theme] .side-bottom,html[data-theme] .side-bottom span{color:#b9ddea!important}
+nav button:hover,nav button.active,html[data-theme] nav button:hover,html[data-theme] nav button.active{
+  background:#12465b!important;color:#cbe7f1!important;box-shadow:inset 4px 0 0 #4f91aa!important
+}
+.card,.section,.panel,.training,.material-card,.photo-card,
+html[data-theme] .card,html[data-theme] .section,html[data-theme] .panel,html[data-theme] .training,html[data-theme] .material-card{
+  background:#092f40!important;color:#b9ddea!important;border-color:#4f91aa!important
+}
+.section h2,.panel h2,.training h3,.card b,.card small,.meta,.material-card b,.material-card small,label,
+html[data-theme] .section h2,html[data-theme] .panel h2,html[data-theme] .training h3,html[data-theme] .card b,html[data-theme] .card small,html[data-theme] .meta,html[data-theme] label{
+  color:#b9ddea!important
+}
+.input,input,textarea,select,.public-note,.admin-strip,.hero-admin,.cloud-status,.auth-card,
+html[data-theme] .input,html[data-theme] input,html[data-theme] textarea,html[data-theme] select,html[data-theme] .public-note,html[data-theme] .admin-strip,html[data-theme] .hero-admin{
+  background:#12465b!important;color:#cbe7f1!important;border-color:#4f91aa!important
+}
+input::placeholder,textarea::placeholder{color:#91c4d7!important;opacity:1!important}
+.argo-word,.argo-sub,.hero-admin .argo-word,.hero-admin .argo-sub,.admin-strip .argo-word,.admin-strip .argo-sub,
+html[data-theme] .argo-word,html[data-theme] .argo-sub{color:#cbe7f1!important}
+.btn,.btn.light,.btn.primary,.btn.dark,.btn.danger,.step,.step.active,.status,.ok,.progress,
+html[data-theme] .btn,html[data-theme] .light{
+  background:#12465b!important;color:#cbe7f1!important;border:1px solid #4f91aa!important
+}
+table th,html[data-theme] table th{background:#12465b!important;color:#cbe7f1!important}
+table td,html[data-theme] table td{background:#092f40!important;color:#b9ddea!important;border-color:#4f91aa!important}
+.preview-shell{background:#041923!important}
+.auth-card p,.auth-note,#loginStatus,.auth-error{color:#b9ddea!important}
+.empty-state{padding:24px!important;text-align:center!important;border:1px dashed #4f91aa!important;border-radius:8px!important;background:#12465b!important;color:#cbe7f1!important}
+.model-description{margin-top:7px!important;color:#b9ddea!important;font-size:13px!important}
+.hero-text{background:rgba(195,221,231,.94)!important;color:#092534!important}
+.hero-text,.hero-text *{color:#092534!important}
+.hero:after{display:none!important;content:none!important}
+.cover-photo-local{filter:none!important;object-fit:cover!important}
+.cover-visual:after{display:none!important;content:none!important}
+.thumb,.material-icon{background:#12465b!important;color:#cbe7f1!important}
+.cover-band:after{background:#4f91aa!important}
+.brand .d,.hero-d,.pdf-logo span,.auth-brand span{color:#f58220!important}
+
+/* Relatório: máxima leitura sobre a fotografia */
+.pdf-page,.pdf-page:not(.pdf-cover){background:#dcecf3!important;color:#092534!important}
+.pdf-page,.pdf-page *{color:#092534!important}
+.pdf-page:not(.pdf-cover)::before{
+  background:linear-gradient(rgba(220,236,243,.62),rgba(220,236,243,.62)),url('shopping_d_nova_foto.jpg') center top/100% 100% no-repeat!important
+}
+.pdf-page .pdf-title{
+  color:#092534!important;background:rgba(195,221,231,.96)!important;
+  border-left:6px solid #092534!important;border-top:1px solid #4f91aa!important;border-right:1px solid #4f91aa!important;border-bottom:1px solid #4f91aa!important;
+  padding:8px 12px!important;margin:18px 0 10px!important;line-height:1.25!important
+}
+.pdf-page .pdf-text{
+  color:#092534!important;background:rgba(220,236,243,.96)!important;
+  border:1px solid #79aabd!important;border-radius:5px!important;padding:9px 11px!important;
+  font-size:15px!important;line-height:1.5!important
+}
+.pdf-page .info-box,.pdf-page .evalbox,.pdf-page .pdf-photo,.pdf-page table,.pdf-page .creator-stamp,
+.pdf-page .pdf-box,.pdf-page .pdf-info,.pdf-page .pdf-section,.pdf-page .signature-box,.pdf-page .footer{
+  background:rgba(195,221,231,.96)!important;color:#092534!important;border-color:#4f91aa!important
+}
+.pdf-page .info-box,.pdf-page .info-box small,.pdf-page .evalbox,.pdf-page .evalbox h3,
+.pdf-page .pdf-photo,.pdf-page .pdf-photo p,.pdf-page .pdf-admin,.pdf-page .pdf-admin b,
+.pdf-page .footer,.pdf-page .footer span,.pdf-page table,.pdf-page table th,.pdf-page table td{
+  color:#092534!important
+}
+.pdf-page .pdf-section-mark,.pdf-page .tagline,.pdf-page table th{
+  background:#9fc9d9!important;color:#092534!important;border-color:#4f91aa!important
+}
+.pdf-page .pdf-section-mark strong,.pdf-page .pdf-section-mark span,.pdf-page .tagline{color:#092534!important}
+.pdf-responsible{margin-top:40px!important;padding:18px!important;background:#c3dde7!important;color:#092534!important;border-left:5px solid #092534!important}
+.pdf-responsible small{color:#092534!important}
+.pdf-empty-photo{height:700px!important;display:grid!important;place-items:center!important;border:2px dashed #4f91aa!important;background:#dcecf3!important;color:#092534!important;font-size:15px!important;font-weight:700!important}
+.pdf-signature{margin:42px 0!important;text-align:center!important;color:#092534!important}
+.pdf-signature>div{width:290px!important;border-top:2px solid #092534!important;margin:auto!important;padding-top:8px!important;color:#092534!important}
+.pdf-signature small{color:#092534!important}
+.cover-band,.cover-word{background:rgba(195,221,231,.96)!important;color:#092534!important}
+.cover-band h2,.cover-band p,.cover-word h1,.cover-word p,.cover-word .pdf-logo{color:#092534!important}
+
+@media print{
+  html,body,#pdfContent,.preview-shell{background:#c3dde7!important}
+  .pdf-page,.pdf-page:not(.pdf-cover){background:#dcecf3!important}
+}
+</style>
+
+<style>
+/* Correção final dos títulos que perdiam contraste na visualização de impressão */
+.pdf-page .pdf-title,
+.pdf-page h1,.pdf-page h2,.pdf-page h3,
+.pdf-page .pdf-title *{
+  color:#041923!important;
+  -webkit-text-fill-color:#041923!important;
+  opacity:1!important;
+  font-weight:900!important;
+  text-shadow:none!important;
+}
+.pdf-page .pdf-title{
+  background:#b9ddea!important;
+  border:2px solid #4f91aa!important;
+  border-left:7px solid #041923!important;
+  padding:9px 12px!important;
+  font-size:24px!important;
+  line-height:1.25!important;
+}
+.pdf-page .pdf-text,
+.pdf-page .info-box,
+.pdf-page .info-box small{
+  color:#041923!important;
+  -webkit-text-fill-color:#041923!important;
+  opacity:1!important;
+}
+@media print{
+  .pdf-page .pdf-title,
+  .pdf-page h1,.pdf-page h2,.pdf-page h3,
+  .pdf-page .pdf-text,
+  .pdf-page .info-box,
+  .pdf-page .info-box small{
+    color:#041923!important;
+    -webkit-text-fill-color:#041923!important;
+    opacity:1!important;
+  }
+}
+</style>
+</body>
+</html>
